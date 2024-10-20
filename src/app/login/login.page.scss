@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: var(--background);
+  color: var(--color);
+  letter-spacing: 1px;
+  transition: background 0.2s ease;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem; /* Aumenta el tamaño de la fuente */
+  font-weight: bold; /* Texto en negrita */
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegura que ocupe toda la pantalla */
+  width: 100%;
+  background: linear-gradient(45deg, green, red);
+}
+
+.login-container {
+  position: relative;
+  width: 90%;
+  max-width: 400px; /* Limita el tamaño del formulario */
+}
+
+.form-container {
+  background: rgba(0, 0, 0, 0.7); /* Fondo más oscuro con opacidad */
+  border: 1px solid hsla(0, 0%, 65%, 0.158);
+  box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.login-container form input {
+  display: block;
+  padding: 16px; /* Aumenta el padding */
+  width: 100%;
+  margin: 1.5rem 0; /* Espacio entre inputs */
+  color: var(--color);
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo de los inputs con opacidad */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold; /* Texto en negrita */
+  font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+  color:white;
+}
+
+.login-container form input:focus {
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+}
+
+.login-container form button {
+  background-color: var(--primary-color);
+  color: white;
+  display: block;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Aumenta el tamaño del texto del botón */
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  .textito{
+    font-size: 35px;
+  }
+}
+
+.login-container form button:hover {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+
+.register-forget {
+  color: white;
+  font-size: 1rem; /* Aumenta el tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+
+  display:flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.opacity {
+  opacity: 0.85; /* Aumenta un poco la opacidad para resaltar */
+}
+
+.accessss{
+  margin: 10px;
+  text-align: center;
+  border: 1px solid hsla(0, 0%, 65%, 0.158);
+  font-size: 20px;
+  color:white;
+}
+
+.iniciarSesionnnn{
+  border: 1px solid hsla(0, 0%, 65%, 0.158);
+  padding:5px;
+}
+.overlay {
+  position: fixed; /* Fija el contenedor en relación con la ventana del navegador */
+  top: 0; /* Posiciona el contenedor en la parte superior */
+  left: 0; /* Posiciona el contenedor a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  height: 100%; /* Ocupa toda la altura de la pantalla */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Asegura que el overlay esté sobre otros elementos */
+}
+
+.alert-card {
+  position: relative; /* Fija el card en relación con el overlay */
+  width: 80%; /* Ajusta el ancho del card (puede ser un porcentaje o valor fijo) */
+  max-width: 600px; /* Ancho máximo del card */
+  padding: 30px; /* Espacio interno del card */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para destacar el card */
+  box-sizing: border-box; /* Incluye el padding y el border en el tamaño total */
+  text-align: center;
+}
+.titulo{
+  //font-size: 5000px;
+  color:white;
+  font-weight: bold;
+}

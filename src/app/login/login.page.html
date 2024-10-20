@@ -1,0 +1,32 @@
+
+  <div class="container">
+    <div class="login-container">
+      <div class="circle circle-one"></div>
+      <div class="form-container">
+        <h1 class="titulo">ALARMA ANTI ROBO</h1>
+        <form>
+          <input class="holaa"type="text" placeholder="CORREO ELECTRÓNICO" [(ngModel)]="correo" name="correo" required />
+          <input type="password" placeholder="CONTRASEÑA" [(ngModel)]="clave" name="clave" required />
+          <button class ="iniciarSesionnnn" type="button" class="opacity" (click)="IniciarSesion(correo, clave)"><div class="textito">
+            Iniciar Sesión
+          </div></button>
+        </form>
+        <div class="register-forget">
+          <div class ="accessss"(click)="accesoRapido('admin@admin.com', '111111')">USUARIO 1</div>
+          <div class ="accessss"(click)="accesoRapido('invitado@invitado.com', '222222')">USUARIO 2</div>
+          <div class ="accessss"(click)="accesoRapido('usuario@usuario.com', '333333')">USUARIO 3</div>
+        </div>
+      </div>
+      <div class="circle circle-two"></div>
+    </div>
+    <div class="theme-btn-container"></div>
+  </div>
+
+  <div class="overlay" *ngIf="mostrar">
+    <div class="alert-card">
+      <div class="centrar">
+        <p>{{logueo}}</p>
+      </div>
+      <button class="login-button" (click)="VolverAlLogin()" *ngIf="!booleanLogueo">Volver a intentar</button>
+    </div>
+  </div>

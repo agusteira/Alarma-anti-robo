@@ -1,0 +1,72 @@
+
+  <div class="fullscreen-container">
+    <div class="TITULOOO" [ngClass]="{'inactive': detectorActive, 'active': !detectorActive}">
+      <h1 class="tituloH">DETECTOR 
+        <ng-container *ngIf="!detectorActive">
+          DESACTIVADO
+        </ng-container>
+        <ng-container *ngIf="detectorActive">
+          ACTIVADO
+        </ng-container>
+      </h1 >
+    </div>
+    
+    <div
+      class="detector"
+      [ngClass]="{'inactive': detectorActive, 'active': !detectorActive}"
+      (click)="toggleDetector()"
+    >
+    
+    <img src="assets/png/candado-cerrado.png" alt="Logo" class="splash-logo" *ngIf="detectorActive">
+    <img src="assets/png/candado-abierto.png" alt="Logo" class="splash-logo" *ngIf="!detectorActive">
+    <!--Rotacion gamma: {{ rotacion }} <br>
+    Rotacion beta: {{ rotacionB }} <br>-->
+
+    
+
+    </div>
+
+    <div class="button-container" [ngClass]="{'inactive': detectorActive, 'active': !detectorActive}"
+    (click)="toggleDetector()"> 
+      <div class="boton-desloguearse" (click)="abrirOverlay()">
+        Cerrar sesión
+      </div>
+    
+    </div>
+    
+
+    <div class="overlay" *ngIf="mostrarAlerta">
+      <ion-card class="alert-card">
+        <ion-item id="clave" class="login-item">
+          <ion-label position="floating">Clave</ion-label>
+          <ion-input type="password" [(ngModel)]="clave" name="clave">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+    
+        <ion-button color="primary" expand="block" class="login-button" (click)="cerrarAlerta(clave)">
+          Apagar alarma
+        </ion-button>
+      </ion-card>
+    </div>
+    
+    <div class="overlay" *ngIf="desloguarseee">
+      <ion-card class="alert-card">
+        <ion-item id="clave" class="login-item">
+          <ion-label position="floating">Clave</ion-label>
+          <ion-input type="password" [(ngModel)]="clave" name="clave">
+            <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+          </ion-input>
+        </ion-item>
+    
+        <ion-button color="primary" expand="block" class="login-button" (click)="logout(clave)">
+          Desloguearse
+        </ion-button>
+        <ion-button color="primary" expand="block" class="login-button" (click)="this.desloguarseee = false">
+          Volver
+        </ion-button>
+      </ion-card>
+    </div>
+
+  </div>
+  

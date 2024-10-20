@@ -1,0 +1,95 @@
+.fullscreen-container {
+  display: flex;
+  flex-direction: column; /* Alinea en columnas */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.detector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-desloguearse {
+  width: 80%;
+  padding: 15px;
+  background-color: #3880ff; /* Color de fondo, similar al color primary de Ionic */
+  color: white; /* Color del texto */
+  text-align: center;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al estilo "puntero" cuando se pasa sobre el botón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Sombra del botón */
+  margin-bottom: 20px;
+  font-size: 32px; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Animación de hover */
+  border-radius: 25px;
+}
+
+.boton-desloguearse:hover {
+  background-color: #285dbf; /* Cambia el color de fondo al pasar el mouse */
+  transform: scale(1.02); /* Leve aumento de tamaño al hacer hover */
+}
+
+.boton-desloguearse:active {
+  transform: scale(0.98); /* Efecto de "clic" al presionar */
+}
+
+
+
+
+.active {
+  background-color: green;
+}
+
+.inactive {
+  background-color: red;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-card {
+  width: 80%;
+  max-width: 400px;
+  padding: 16px;
+}
+
+.centrar {
+  text-align: center;
+}
+
+.TITULOOO{
+  width: 100%;
+  text-align: center;
+}
+
+.tituloH{
+  font-size: 25px;
+  font-weight: bold;
+  color:white;
+}

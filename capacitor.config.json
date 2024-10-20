@@ -1,0 +1,10 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Alarma anti robo",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": false
+    }
+  }
+}
